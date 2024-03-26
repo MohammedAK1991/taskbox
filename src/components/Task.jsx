@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Task({
   task: { id, title, state },
@@ -47,6 +48,7 @@ export default function Task({
     </div>
   );
 }
+
 Task.propTypes = {
   /** Composition of the task */
   task: PropTypes.shape({
